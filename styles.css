@@ -490,21 +490,7 @@ footer p {
 
 
   
-        /* Zone d'affichage PDF intégrée */
-        #pdf-container {
-            margin: 1rem auto;
-            /* La hauteur sera définie dynamiquement selon le contenu */
-        }
-
-        .pdf-page {
-            margin: 0 auto 15px auto;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-        }
-
-        .pdf-page:last-child {
-            margin-bottom: 0;
-        }
+       
 
 
 .heart-container {
