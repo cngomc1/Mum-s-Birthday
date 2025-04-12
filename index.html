@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mum's Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Ajout du PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    
+</head>
+<body>
+    <section id="main">
+        <div class="heart-container">
+          <!-- Beaucoup plus de cœurs -->
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+        </div>
+      
+        <div>
+          <h1 class="date">Lundi 21 Avril 2025</h1>
+        </div>
+        <div> A MON TOUR DE TE LE SOUHAITER</div>
+        <div>
+          <h1 class="title">Joyeux Anniversaire Maman !</h1>
+        </div>
+      </section>
+      
+    <section>
+        Un message spécial pour toi, maman, pour te dire à quel point tu es précieuse pour moi.
+    </section>
+    <section id="music">
+        <h2>Musique</h2>
+        <p>Appuyez sur play</p>
+        <audio controls>
+            <source src="mum'sbirthday.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+        <p>appuyez sur le bouton de téléchargement pour télécharger l'audio</p>
+        <a href="mum'sbirthday.mp3" download>
+            <button type="button" itemscope="download">Télécharger l'audio</button>
+        </a>
+    </section>
+    <section id="texte-deroulant">
+        <div style="margin: 20px 0;">
+            <h3 onclick="toggleVerset()" style="cursor: pointer; display: flex; align-items: center;">
+              Éphésiens 6v2
+              <i id="chevron-icon" class="fas fa-chevron-down" style="margin-left: 10px; transition: transform 0.3s;"></i>
+            </h3>
+            <div id="verset-content" style="display: none; margin-top: 10px;">
+              <p>"Honore ton père et ta mère (c’est le premier commandement avec une promesse), afin que tu sois heureux et que tu vives longtemps sur la terre."</p>
+            </div>
+          </div>
+          
+    </section>
+    <section id="video">
+        <h2>Vidéo</h2>
+        <p>Appuyez sur play</p>
+        <video width="320" height="240" controls>
+            <source src="mum'sbirthday.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+    </section>
+    <section id="pdf">
+        <h2>Carte d'anniversaire</h2>
+        <!-- <iframe src="mumsbirthday.pdf" width="600" height="800">
+            Votre navigateur ne supporte pas les iframes.
+          </iframe> -->
+          <div id="pdf-container">
+            <div class="loading">Chargement de ta carte d'anniversaire...</div>
+        </div>
+        
+        <a href="mumsbirthday.pdf" download>
+            <button type="button">Telecharger la carte d'anniversaire</button>
+        </a>
+    </section>
+    <Footer>
+        <h2>Merci d'avoir pris le temps de lire ce message !</h2>
+        <p>De manière générale je n'oublierai jamais que le meilleur moyen de finir c'est de commencer.</p>
+    </Footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script>
+        function toggleVerset() {
+          const content = document.getElementById("verset-content");
+          const icon = document.getElementById("chevron-icon");
+      
+          if (content.style.display === "none") {
+            content.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            content.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        }
+      </script>
+      
+      
+</body>
+</html>

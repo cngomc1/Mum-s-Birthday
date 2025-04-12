@@ -1,0 +1,636 @@
+/* Polices importées pour un design plus élégant */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap');
+        
+/* Reset et styles de base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles généraux optimisés pour mobile-first */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f5;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Évite le défilement horizontal sur mobile */
+}
+
+/* En-tête principal avec animation gradient - optimisé pour mobile */
+#main {
+    padding: 2.5rem 1rem;
+    background: linear-gradient(135deg, #ffefef 0%, #ffe0e0 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-height: 50vh; /* Garantit une bonne hauteur sur les petits appareils */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.announcement {
+    font-size: 1rem;
+    color: #d96459;
+    margin: 0.8rem 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    color: #d96459;
+    margin: 0.8rem 0;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background-color: #d96459;
+    bottom: -8px;
+    left: 15%;
+    border-radius: 10px;
+}
+
+/* Style des sections - mobile-first */
+section {
+    margin: 1.5rem auto;
+    padding: 1.5rem 1rem;
+    background: white;
+    border-radius: 12px;
+    width: 92%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+section h2 {
+    color: #d96459;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #d96459;
+    bottom: -6px;
+    left: 20%;
+    border-radius: 10px;
+}
+
+/* Message spécial */
+.message-special {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin: 0 auto;
+    padding: 0.8rem;
+    font-style: italic;
+}
+
+/* Lecteurs audio et vidéo pour mobile */
+audio, video {
+    margin: 1.2rem auto;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* PDF viewer - style pour PDF.js */
+#pdf-container {
+    width: 100%;
+    height: 400px;
+    margin: 1.2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+#pdf-canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+#pdf-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+#pdf-controls button {
+    margin: 0 5px;
+    padding: 5px 15px;
+}
+
+#page-num {
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+/* Boutons */
+button {
+    background-color: #d96459;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(217, 100, 89, 0.3);
+    width: auto; /* Pour mobile: largeur adaptée au contenu */
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #c55b50;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(217, 100, 89, 0.4);
+}
+
+/* Verset biblique */
+.verset-container {
+    background-color: #f9f3f3;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin: 1.2rem 0;
+    border-left: 4px solid #d96459;
+}
+
+.verset-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #d96459;
+    font-weight: 600;
+}
+
+.verset-content {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #555;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.8rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: #ccc;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Animation des cœurs */
+.heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 15px; /* Plus petit pour mobile */
+    height: 15px;
+    background-color: rgba(217, 100, 89, 0.5);
+    transform: rotate(45deg);
+    animation: float 10s linear infinite;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(217, 100, 89, 0.5);
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -7.5px;
+    left: 0;
+}
+.heart::after {
+    left: -7.5px;
+    top: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) rotate(45deg) scale(0.8);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-10vh) rotate(45deg) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Randomisation des cœurs - moins nombreux pour mobile
+.heart:nth-child(1) { left: 10%; animation-duration: 15s; animation-delay: 0s; }
+.heart:nth-child(2) { left: 25%; animation-duration: 12s; animation-delay: 2s; }
+.heart:nth-child(3) { left: 40%; animation-duration: 17s; animation-delay: 1s; }
+.heart:nth-child(4) { left: 55%; animation-duration: 14s; animation-delay: 3s; }
+.heart:nth-child(5) { left: 70%; animation-duration: 16s; animation-delay: 0.5s; }
+.heart:nth-child(6) { left: 85%; animation-duration: 13s; animation-delay: 2.5s; }
+.heart:nth-child(7) { left: 5%; animation-duration: 18s; animation-delay: 1.5s; }
+.heart:nth-child(8) { left: 20%; animation-duration: 11s; animation-delay: 3.5s; }
+.heart:nth-child(9) { left: 35%; animation-duration: 14s; animation-delay: 0.3s; }
+.heart:nth-child(10) { left: 50%; animation-duration: 16s; animation-delay: 2.2s; }
+.heart:nth-child(11) { left: 65%; animation-duration: 13s; animation-delay: 1.2s; }
+.heart:nth-child(12) { left: 80%; animation-duration: 15s; animation-delay: 3.2s; }
+.heart:nth-child(13) { left: 95%; animation-duration: 17s; animation-delay: 0.8s; }
+.heart:nth-child(14) { left: 15%; animation-duration: 12s; animation-delay: 2.8s; }
+.heart:nth-child(15) { left: 45%; animation-duration: 14s; animation-delay: 1.8s; } */
+
+/* Optimisation pour les plus petits téléphones */
+@media (max-width: 360px) {
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .date {
+        font-size: 1rem;
+    }
+
+    .announcement {
+        font-size: 0.9rem;
+    }
+    
+    section {
+        padding: 1.2rem 0.8rem;
+        width: 94%;
+    }
+    
+    .message-special {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0.5rem;
+    }
+    
+    button {
+        padding: 0.7rem 1.3rem;
+        font-size: 0.9rem;
+    }
+    
+    #pdf-container {
+        height: 300px;
+    }
+}
+
+/* Tablettes et moyens écrans */
+@media (min-width: 600px) {
+    .title {
+        font-size: 2.8rem;
+    }
+    
+    .date {
+        font-size: 1.4rem;
+    }
+
+    .announcement {
+        font-size: 1.2rem;
+    }
+    
+    section {
+        width: 85%;
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+    
+    section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .message-special {
+        font-size: 1.2rem;
+        max-width: 80%;
+    }
+    
+    audio, video {
+        max-width: 80%;
+    }
+    
+    #pdf-container {
+        height: 500px;
+    }
+    
+    .heart {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .heart::before,
+    .heart::after {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .heart::before {
+        top: -9px;
+    }
+    
+    .heart::after {
+        left: -9px;
+    }
+}
+
+/* Grands écrans/Ordinateurs */
+@media (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    
+    #main {
+        padding: 4rem 2rem;
+        min-height: 60vh;
+    }
+    
+    .title {
+        font-size: 3.5rem;
+    }
+    
+    .date {
+        font-size: 1.6rem;
+    }
+
+    .announcement {
+        font-size: 1.3rem;
+        margin: 1.5rem 0;
+    }
+    
+    section {
+        width: 70%;
+        max-width: 900px;
+        padding: 2.5rem;
+        margin: 3rem auto;
+        transition: transform 0.3s ease;
+    }
+    
+    section:hover {
+        transform: translateY(-5px);
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .message-special {
+        font-size: 1.3rem;
+        max-width: 70%;
+        line-height: 1.8;
+    }
+    
+    audio, video {
+        max-width: 70%;
+    }
+    
+    #pdf-container {
+        height: 600px;
+    }
+    
+    button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .heart {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .heart::before,
+    .heart::after {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .heart::before {
+        top: -11px;
+    }
+    
+    .heart::after {
+        left: -11px;
+    }
+    
+    footer {
+        padding: 2.5rem;
+    }
+    
+    footer h2 {
+        font-size: 1.5rem;
+    }
+    
+    footer p {
+        font-size: 1.1rem;
+    }
+}
+
+
+  
+        /* Zone d'affichage PDF intégrée */
+        #pdf-container {
+            margin: 1rem auto;
+            /* La hauteur sera définie dynamiquement selon le contenu */
+        }
+
+        .pdf-page {
+            margin: 0 auto 15px auto;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+        }
+
+        .pdf-page:last-child {
+            margin-bottom: 0;
+        }
+
+
+.heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none; /* les clics passent à travers */
+  }
+  
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    transform: rotate(45deg);
+    animation: float 10s linear infinite;
+    opacity: 0.6;
+    border-radius: 5px;
+  }
+  
+  /* Le triangle du cœur */
+  .heart::before,
+  .heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+  .heart::after {
+    left: -10px;
+    top: 0;
+  }
+  
+  /* Animation flottante */
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) rotate(45deg);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-10vh) rotate(45deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Randomisation avec nth-child */
+  .heart:nth-child(1) {
+    left: 20%;
+    animation-duration: 12s;
+    animation-delay: 0s;
+  }
+  .heart:nth-child(2) {
+    left: 40%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+  }
+  .heart:nth-child(3) {
+    left: 60%;
+    animation-duration: 14s;
+    animation-delay: 4s;
+  }
+  .heart:nth-child(4) {
+    left: 80%;
+    animation-duration: 11s;
+    animation-delay: 1s;
+  }
+  .heart:nth-child(5) {
+    left: 30%;
+    animation-duration: 13s;
+    animation-delay: 3s;
+  }
+  .heart:nth-child(6) {
+    left: 10%;
+    animation-duration: 12s;
+    animation-delay: 6s;
+  }
+  .heart:nth-child(7) {
+    left: 42%;
+    animation-duration: 10s;
+    animation-delay: 8s;
+  }
+  .heart:nth-child(8) {
+    left: 56%;
+    animation-duration: 14s;
+    animation-delay: 10s;
+  }
+  .heart:nth-child(9) {
+    left: 78%;
+    animation-duration: 11s;
+    animation-delay: 7s;
+  }
+  .heart:nth-child(10) {
+    left: 90%;
+    animation-duration: 13s;
+    animation-delay: 5s;
+  }
+
+
+
+  
+        /* Zone d'affichage PDF intégrée */
+        #pdf-container {
+            margin: 1rem auto;
+            /* La hauteur sera définie dynamiquement selon le contenu */
+        }
+
+        .pdf-page {
+            margin: 0 auto 15px auto;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+        }
+
+        .pdf-page:last-child {
+            margin-bottom: 0;
+        }
