@@ -128,11 +128,11 @@ audio, video {
     overflow: hidden;
     background-color: transparent;
 }
-/* 
+
 #pdf-canvas {
     display: block;
     margin: 0 auto;
-} */
+} 
 
 #pdf-controls {
     display: flex;
